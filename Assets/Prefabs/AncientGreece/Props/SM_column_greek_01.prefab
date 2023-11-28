@@ -29,9 +29,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7802019982735464150
 MeshFilter:
@@ -62,7 +63,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: -2873628253902159166, guid: 4cfc6da2a60503f49821ae484e21e388, type: 3}
-  - {fileID: 2100000, guid: 5c64b94493b11ec4ab25b0ec70e8adc0, type: 2}
+  - {fileID: 2100000, guid: faba7494ed2f549448ab7a5ace959df4, type: 2}
   - {fileID: 2100000, guid: 6314f2071ababf748898004b5c6512f2, type: 2}
   - {fileID: 2100000, guid: 8b65387548175564795b1d567a546cd2, type: 2}
   m_StaticBatchInfo:
@@ -94,9 +95,17 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5810308654012629961}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7791579610158419721, guid: 4cfc6da2a60503f49821ae484e21e388, type: 3}
