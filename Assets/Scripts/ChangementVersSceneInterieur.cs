@@ -21,5 +21,21 @@ public class ChangementVersSceneInterieur : MonoBehaviour
                 levelManager.LoadAsyncScene("SceneTemple");
             }
         }
+
+        if(other.tag == "Player"){
+            Debug.Log("test Player");
+            if(gameObject.tag == "MaisonViking"){
+                Debug.Log("test viking");
+                levelManager.LoadAsyncScene("SceneViking");
+            }
+        }
+
+        if(other.tag == "Player"){
+            Debug.Log("test Player");
+            if(gameObject.tag == "VersExterieur"){
+                Debug.Log("test exterieur");
+                levelManager.LoadAsyncScene("SceneExterieur");
+            }
+        }
     }
 }
