@@ -6,6 +6,8 @@ using UnityEngine.Events;
 
 public class GestionNiveau : MonoBehaviour
 {
+    private LevelManager levelManager;
+
     [Header("Les informations gardées en mémoire")]
     [SerializeField] private InfoJoueur infoJoueur;
 
@@ -13,6 +15,7 @@ public class GestionNiveau : MonoBehaviour
 
     [Header("Information pour le Canvas")]
     [SerializeField] private TMP_Text champTemps;
+    [SerializeField] private GameObject textDefaite;
 
     [Space(50)]
 
@@ -21,8 +24,11 @@ public class GestionNiveau : MonoBehaviour
     public UnityEvent auChangementDuTemps;
     public UnityEvent aLaFinDuTemps;
 
+    private bool defaite = false;
+
     void Start()
     {
+        levelManager = LevelManager.Instance;
         DemarrerDecompte();
     }
 
@@ -51,6 +57,21 @@ public class GestionNiveau : MonoBehaviour
 
     public void DemarrerDecompte(){
         decompteActif = true;
+    }
+
+    public void VerifierDefaite(){
+        if(defaite == false){
+            if(infoJoueur.nbTemps <= 0){
+                textDefaite.gameObject.SetActive(true);
+                Invoke("ChangerSceneFin", 5.0f);
+                defaite = true;
+            } 
+        }
+        
+    }
+
+    void ChangerSceneFin(){
+        levelManager.LoadAsyncScene("SceneFinale");
     }
 
 }
