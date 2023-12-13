@@ -212,6 +212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 10048129}
   - component: {fileID: 10048130}
+  - component: {fileID: 10048131}
   m_Layer: 0
   m_Name: forestTeleportPoint
   m_TagString: Untagged
@@ -227,7 +228,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 10048128}
   m_LocalRotation: {x: 0.03284014, y: -0, z: -0.99946064, w: 0}
-  m_LocalPosition: {x: 29.902628, y: 152.9931, z: 39.096}
+  m_LocalPosition: {x: 30.2, y: 152.9931, z: 39.096}
   m_LocalScale: {x: 0.3993546, y: 0.39935464, z: 0.39935467}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -249,12 +250,25 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 3.9743419, y: 10.556354, z: 7.7836366}
   m_Center: {x: 1.4871728, y: 1.5217346, z: -0.1518697}
+--- !u!114 &10048131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10048128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c526a0adb28bfd4f84f46a34d37bdc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportTarget: {fileID: 1494156180}
 --- !u!1001 &13770991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1509,6 +1523,7 @@ GameObject:
   m_Component:
   - component: {fileID: 130704143}
   - component: {fileID: 130704145}
+  - component: {fileID: 130704146}
   m_Layer: 0
   m_Name: VillageTeleportPoint1
   m_TagString: Untagged
@@ -1552,6 +1567,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0991712, y: 8.1964, z: 7.955134}
   m_Center: {x: 0.5495855, y: -3.5982006, z: 0.039622303}
+--- !u!114 &130704146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130704142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c526a0adb28bfd4f84f46a34d37bdc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportTarget: {fileID: 2077480873}
 --- !u!4 &131819224 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2304316632326304721, guid: 7cc76ee951327a34b8dd5b77b170037d,
@@ -3651,33 +3679,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 260776302}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &261625966 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1452266166493153653, guid: 5193f9b38fdda7c4294cbee4b226ea6e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1287198767}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &261625971
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 261625966}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.74264526, y: 1.1136475, z: 0.8436203}
-  m_Center: {x: -0.027999878, y: 0.6686859, z: 0.05208206}
 --- !u!1001 &265143438
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3868,12 +3869,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.9743419, y: 10.556354, z: 7.7836366}
-  m_Center: {x: 1.4871728, y: 1.5217346, z: -0.1518697}
+  m_Size: {x: 1.712991, y: 2.1814446, z: 2.266332}
+  m_Center: {x: 1.1274282, y: 3.5823445, z: 0.5617792}
 --- !u!4 &274152451
 Transform:
   m_ObjectHideFlags: 0
@@ -9396,6 +9397,7 @@ GameObject:
   m_Component:
   - component: {fileID: 815771431}
   - component: {fileID: 815771432}
+  - component: {fileID: 815771433}
   m_Layer: 0
   m_Name: DesertTeleportPoint
   m_TagString: Untagged
@@ -9439,6 +9441,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.856244, y: 3.5932932, z: 0.9999999}
   m_Center: {x: 0.9281188, y: -1.2966468, z: -0.0000000016333734}
+--- !u!114 &815771433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815771430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c526a0adb28bfd4f84f46a34d37bdc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportTarget: {fileID: 1875896925}
 --- !u!1001 &825908180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11646,7 +11661,6 @@ Transform:
   - {fileID: 1494156180}
   - {fileID: 1070917208}
   - {fileID: 274152451}
-  - {fileID: 1661086256}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12893,6 +12907,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1070917208}
   - component: {fileID: 1070917210}
+  - component: {fileID: 1070917211}
   m_Layer: 0
   m_Name: VillageTeleportPoint2
   m_TagString: Untagged
@@ -12936,6 +12951,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0991712, y: 8.1964, z: 7.955134}
   m_Center: {x: 0.5495855, y: -3.5982006, z: 0.039622303}
+--- !u!114 &1070917211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070917207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c526a0adb28bfd4f84f46a34d37bdc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportTarget: {fileID: 274152451}
 --- !u!1001 &1086807440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15566,10 +15594,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1452266166493153653, guid: 5193f9b38fdda7c4294cbee4b226ea6e,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 261625971}
     - targetCorrespondingSourceObject: {fileID: 8911621978258813718, guid: 5193f9b38fdda7c4294cbee4b226ea6e,
         type: 3}
       insertIndex: -1
@@ -17535,7 +17559,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1494156179}
   m_LocalRotation: {x: 0.9643639, y: -0, z: 0.26457962, w: 0}
-  m_LocalPosition: {x: 76.01, y: 151.178, z: 96.35}
+  m_LocalPosition: {x: 76.01, y: 151.218, z: 96.35}
   m_LocalScale: {x: 0.39935458, y: 0.39935464, z: 0.39935464}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17557,7 +17581,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -19678,60 +19702,6 @@ Transform:
   m_Father: {fileID: 492616311}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1661086255
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1661086256}
-  - component: {fileID: 1661086257}
-  m_Layer: 0
-  m_Name: -------Script de teleportation
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1661086256
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1661086255}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 950556171}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1661086257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1661086255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c526a0adb28bfd4f84f46a34d37bdc7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  teleportTarget: {fileID: 0}
-  thePlayer: {fileID: 261625966}
-  portail_1: {fileID: 815771430}
-  portail_2: {fileID: 1875896924}
-  portail_3: {fileID: 1070917207}
-  portail_4: {fileID: 10048128}
-  portail_back_1: {fileID: 2077480872}
-  portail_back_2: {fileID: 1875896924}
-  portail_back_3: {fileID: 1494156179}
-  portail_back_4: {fileID: 274152449}
 --- !u!1 &1681063384
 GameObject:
   m_ObjectHideFlags: 0
@@ -21318,7 +21288,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infoJoueur: {fileID: 11400000, guid: b67c986e29d36124c9b83c2d6b9ca011, type: 2}
-  champScore: {fileID: 0}
   champTemps: {fileID: 1119234872}
   auChangementDuTemps:
     m_PersistentCalls:
@@ -22314,7 +22283,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1875896924}
   m_LocalRotation: {x: 0.91563535, y: -0, z: -0.40200984, w: 0}
-  m_LocalPosition: {x: 118.026, y: 150.33, z: 106.764}
+  m_LocalPosition: {x: 118.026, y: 149.951, z: 106.764}
   m_LocalScale: {x: 0.39935458, y: 0.39935464, z: 0.39935464}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22336,7 +22305,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
