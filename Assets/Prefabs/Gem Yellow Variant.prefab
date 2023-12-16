@@ -16,7 +16,7 @@ PrefabInstance:
     - target: {fileID: 8949692460520281997, guid: e6234d0f4b7d3e743922f5f6cd1f133c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8949692460520281997, guid: e6234d0f4b7d3e743922f5f6cd1f133c,
         type: 3}
@@ -79,6 +79,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4737228741403823679, guid: e6234d0f4b7d3e743922f5f6cd1f133c,
         type: 3}
       insertIndex: -1
+      addedObject: {fileID: 4939343666658804662}
+    - targetCorrespondingSourceObject: {fileID: 4737228741403823679, guid: e6234d0f4b7d3e743922f5f6cd1f133c,
+        type: 3}
+      insertIndex: -1
       addedObject: {fileID: 4235273533378569457}
     - targetCorrespondingSourceObject: {fileID: 4737228741403823679, guid: e6234d0f4b7d3e743922f5f6cd1f133c,
         type: 3}
@@ -118,6 +122,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4939343666658804662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6514274267790496872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8e74b48c319a7a42bbf83623feef92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoJoueur: {fileID: 11400000, guid: b67c986e29d36124c9b83c2d6b9ca011, type: 2}
 --- !u!114 &4235273533378569457
 MonoBehaviour:
   m_ObjectHideFlags: 0
