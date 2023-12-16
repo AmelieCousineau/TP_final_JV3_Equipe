@@ -5,11 +5,16 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1009146257764706, guid: 96d02a92e4461d341ac8eaa5e8822fdc, type: 3}
+      propertyPath: m_Name
+      value: EA04_Env_Rocks_Sand_01a_PRE Variant
+      objectReference: {fileID: 0}
     - target: {fileID: 4195436420902094, guid: 96d02a92e4461d341ac8eaa5e8822fdc, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4195436420902094, guid: 96d02a92e4461d341ac8eaa5e8822fdc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -44,4 +49,103 @@ PrefabInstance:
       value: -10.825001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1515677470182462, guid: 96d02a92e4461d341ac8eaa5e8822fdc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 240090909443146706}
+    - targetCorrespondingSourceObject: {fileID: 1010565363859170, guid: 96d02a92e4461d341ac8eaa5e8822fdc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7422874213540048323}
+    - targetCorrespondingSourceObject: {fileID: 1679756886914374, guid: 96d02a92e4461d341ac8eaa5e8822fdc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7958980597263867185}
   m_SourcePrefab: {fileID: 100100000, guid: 96d02a92e4461d341ac8eaa5e8822fdc, type: 3}
+--- !u!1 &874051031609608721 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1679756886914374, guid: 96d02a92e4461d341ac8eaa5e8822fdc,
+    type: 3}
+  m_PrefabInstance: {fileID: 875025930658660183}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &7958980597263867185
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874051031609608721}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 7ceb1fa58e1715e4fbff6cf3286098e6, type: 3}
+--- !u!1 &874215040446526313 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1515677470182462, guid: 96d02a92e4461d341ac8eaa5e8822fdc,
+    type: 3}
+  m_PrefabInstance: {fileID: 875025930658660183}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &240090909443146706
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874215040446526313}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300004, guid: 7ceb1fa58e1715e4fbff6cf3286098e6, type: 3}
+--- !u!1 &875704284461842869 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1010565363859170, guid: 96d02a92e4461d341ac8eaa5e8822fdc,
+    type: 3}
+  m_PrefabInstance: {fileID: 875025930658660183}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &7422874213540048323
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875704284461842869}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300002, guid: 7ceb1fa58e1715e4fbff6cf3286098e6, type: 3}

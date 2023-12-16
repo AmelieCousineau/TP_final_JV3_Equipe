@@ -16,7 +16,7 @@ PrefabInstance:
     - target: {fileID: 3530487434921369875, guid: 98ba86548ddcd664e9df1d008a5c8f97,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3530487434921369875, guid: 98ba86548ddcd664e9df1d008a5c8f97,
         type: 3}
@@ -72,6 +72,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388823885079606662, guid: 98ba86548ddcd664e9df1d008a5c8f97,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
