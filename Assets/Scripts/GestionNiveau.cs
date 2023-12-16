@@ -16,6 +16,7 @@ public class GestionNiveau : MonoBehaviour
     [Header("Information pour le Canvas")]
     [SerializeField] private TMP_Text champTemps;
     [SerializeField] private GameObject textDefaite;
+    [SerializeField] private TMP_Text champScore;
 
     [Space(50)]
 
@@ -35,6 +36,7 @@ public class GestionNiveau : MonoBehaviour
     void Update()
     {
         champTemps.text = infoJoueur.nbTemps.ToString();
+        champScore.text = infoJoueur.nbPoints.ToString();
 
         if(decompteActif){
             if(infoJoueur.nbTemps > 0){
