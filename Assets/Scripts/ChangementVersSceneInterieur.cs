@@ -47,5 +47,13 @@ public class ChangementVersSceneInterieur : MonoBehaviour
                 levelManager.LoadAsyncScene("SceneFinale");
             }
         }
+
+        if(other.tag == "Player"){
+            Debug.Log("test Player");
+            if(gameObject.tag == "Debut"){
+                Debug.Log("test debut");
+                levelManager.LoadAsyncScene("SceneIntro");
+            }
+        }
     }
 }
