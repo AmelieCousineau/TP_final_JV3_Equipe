@@ -6,8 +6,6 @@ public class ChangementVersSceneInterieur : MonoBehaviour
 {
     private LevelManager levelManager;
 
-    [SerializeField] private InfoJoueur infoJoueur;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +29,6 @@ public class ChangementVersSceneInterieur : MonoBehaviour
             if(gameObject.tag == "MaisonViking"){
                 Debug.Log("test viking");
                 levelManager.LoadAsyncScene("SceneViking");
-                infoJoueur.inMaisonViking = true;
             }
         }
 
@@ -40,6 +37,14 @@ public class ChangementVersSceneInterieur : MonoBehaviour
             if(gameObject.tag == "VersExterieur"){
                 Debug.Log("test exterieur");
                 levelManager.LoadAsyncScene("SceneExterieur");
+            }
+        }
+
+        if(other.tag == "Player"){
+            Debug.Log("test Player");
+            if(gameObject.tag == "Fin"){
+                Debug.Log("test fin");
+                levelManager.LoadAsyncScene("SceneFinale");
             }
         }
     }
