@@ -6,10 +6,13 @@ public class ChangementVersSceneInterieur : MonoBehaviour
 {
     private LevelManager levelManager;
 
+    [SerializeField] private InfoJoueur infoJoueur;
+
     // Start is called before the first frame update
     void Start()
     {
         levelManager = LevelManager.Instance;
+        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -19,6 +22,7 @@ public class ChangementVersSceneInterieur : MonoBehaviour
             if(gameObject.tag == "TempleGrec"){
                 Debug.Log("test Temple");
                 levelManager.LoadAsyncScene("SceneTemple");
+
             }
         }
 
@@ -27,6 +31,7 @@ public class ChangementVersSceneInterieur : MonoBehaviour
             if(gameObject.tag == "MaisonViking"){
                 Debug.Log("test viking");
                 levelManager.LoadAsyncScene("SceneViking");
+                infoJoueur.inMaisonViking = true;
             }
         }
 
