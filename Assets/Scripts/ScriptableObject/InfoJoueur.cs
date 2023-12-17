@@ -17,6 +17,6 @@ public class InfoJoueur : ScriptableObject
 
     private void OnEnable(){
         nbPoints = 0;
-        nbTemps = 300;
+        nbTemps = 600;
     }
 }
