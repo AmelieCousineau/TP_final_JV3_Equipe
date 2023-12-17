@@ -9,6 +9,7 @@ TagManager:
   - VersExterieur
   - Main
   - Fin
+  - Debut
   layers:
   - Default
   - TransparentFX
