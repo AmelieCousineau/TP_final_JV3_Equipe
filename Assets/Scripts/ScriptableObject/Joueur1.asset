@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Joueur1
   m_EditorClassIdentifier: 
   nbPoints: 0
-  nbTemps: 0
+  nbTemps: 300
+  inTempleGrec: 0
+  inMaisonViking: 0

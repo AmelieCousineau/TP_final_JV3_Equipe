@@ -12,6 +12,9 @@ public class InfoJoueur : ScriptableObject
     [Header("nombre de temps")]
     public float nbTemps;
 
+    public bool inTempleGrec;
+    public bool inMaisonViking;
+
     private void OnEnable(){
         nbPoints = 0;
         nbTemps = 300;
