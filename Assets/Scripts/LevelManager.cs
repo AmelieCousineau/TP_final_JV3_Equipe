@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
-public static LevelManager Instance;
+    public static LevelManager Instance;
 
     [SerializeField] private GameObject loaderCanvas;
     [SerializeField] private Image progressBar;

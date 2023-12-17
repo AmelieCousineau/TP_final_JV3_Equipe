@@ -10,6 +10,7 @@ public class ChangementVersSceneInterieur : MonoBehaviour
     void Start()
     {
         levelManager = LevelManager.Instance;
+        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -19,6 +20,39 @@ public class ChangementVersSceneInterieur : MonoBehaviour
             if(gameObject.tag == "TempleGrec"){
                 Debug.Log("test Temple");
                 levelManager.LoadAsyncScene("SceneTemple");
+
+            }
+        }
+
+        if(other.tag == "Player"){
+            Debug.Log("test Player");
+            if(gameObject.tag == "MaisonViking"){
+                Debug.Log("test viking");
+                levelManager.LoadAsyncScene("SceneViking");
+            }
+        }
+
+        if(other.tag == "Player"){
+            Debug.Log("test Player");
+            if(gameObject.tag == "VersExterieur"){
+                Debug.Log("test exterieur");
+                levelManager.LoadAsyncScene("SceneExterieur");
+            }
+        }
+
+        if(other.tag == "Player"){
+            Debug.Log("test Player");
+            if(gameObject.tag == "Fin"){
+                Debug.Log("test fin");
+                levelManager.LoadAsyncScene("SceneFinale");
+            }
+        }
+
+        if(other.tag == "Player"){
+            Debug.Log("test Player");
+            if(gameObject.tag == "Debut"){
+                Debug.Log("test debut");
+                levelManager.LoadAsyncScene("SceneIntro");
             }
         }
     }
